@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Cerita-Anak</title>
+
+    <style>
+      body {
+        min-height: 2000px;
+      }
+
+      .konten{
+                /* border: 1px solid; */
+                display: flex;
+                justify-content: space-between;
+            }
+      
+      .card:hover {
+        border: 5px solid grey;
+      }
+
+      .navbar1 a:hover {
+        background-color: skyblue;
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="container-xl" style="background-image: linear-gradient(336deg, #d9b547, #9ad33e00);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow" style="background-color: #12a894; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="container navbar" style="background-image: linear-gradient(222deg, #4caf50, transparent);">
+          <a class="navbar-brand fw-bold" href="#"><i class="bi bi-book-half"></i> Cerita-Anak</a>
+          <div class="navbar1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">Tentang</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Dongeng</a></li>
+                  <li><a class="dropdown-item" href="#">Cerita Rakyat</a></li>
+                  <li><a class="dropdown-item" href="#">Legenda</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-top: 10px;">
+      <strong>Halo sobat cilik semua..!</strong> Temukan cerita kesukaanmu disini.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- Akhir Alert -->
+
+    <!-- Carousel -->
+    <div id="carouselUtamaCerita" class="carousel slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselUtamaCerita" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselUtamaCerita" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselUtamaCerita" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="Attach/Ayam dan rubah.jpg" class="d-block w-100" alt="gambar1" style="width: 200px;">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Attach/Contoh-Cerita-Rakyat1.jpg" class="d-block w-100" alt="gambar2">
+        </div>
+        <div class="carousel-item"  data-bs-interval="2000">
+          <img src="Attach/Penggembala sapi dan serigala1.jpg" class="d-block w-10" alt="gambar3" width="100%">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselUtamaCerita" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselUtamaCerita" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Carousel -->
+    <br/>
+    <br/>
+    <!-- Breadcrumber -->
+    <div class="row d-flex justify-content-between">
+      <div class="col">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Beranda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pilihan Cerita </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="input-group col">
+        <input class="form-control form-control-sm" type="text" placeholder="Judul Cerita" aria-label=".form-control-sm example">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+      </button>
+      </div>
+    </div>
+   
+    <!-- Akhir Breadcrumber -->
+
+    <!-- Kolom -->
+    <div class="container-fluid row justify-content-around" style="margin-top: 10px;">
+      <!-- <div class="col-2" style="background-color: gray;"> Sidebar </div> -->
+      <div class="col row konten">
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin:5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal1">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/Penggembala sapi dan serigala.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Kisah Penggembala dan Serigala</h5>
+            <p class="card-text">Alkisah seorang penggembala sapi yang suka berbohong.</p>
+ 
+          </div>
+        </div>
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal2">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/Timun mas.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Kisah Timun Mas</h5>
+            <p class="card-text">Timun Mas adalah sebuah dongeng dari Jawa Tengah.</p>
+           
+          </div>
+        </div>
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/belalang dan semut.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Kisah Belalang dan Semut</h5>
+            <p class="card-text">Sebuah cerita fabel yang menceritakan tentang pentingnya bergotong-royong.</p>
+           
+          </div>
+        </div>
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal4">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/berani karena jujur.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Cerita Berani karena Jujur</h5>
+            <p class="card-text">Sebuah cerita anak yang menceritakan pentingnya berkata jujur.</p>
+           
+          </div>
+        </div>
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal5">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/cerita-rakyat-sangkuriang.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Cerita Rakyat Sangkuriang</h5>
+            <p class="card-text">Sebuah cerita legenda yang berasala dari masyarakat Sunda.</p>
+          
+          </div>
+        </div>
+        <div class="card col-sm-2 mb-4" style="width: 18rem; margin: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal6">
+          <img class="img-thumbnail rounded rounded-40" src="Attach/dongeng-pendek-bangau-dan-burung-merak.jpg" class="card-img-top" alt="Gambar" style="margin-top: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Dongeng Bangau dan Burung Merak</h5>
+            <p class="card-text">Sebuah kisah dongeng tentang burung Bangau dan Burung Merak yang sombong.</p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Kolom akhir -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Anak Penggembala dan Serigala</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/Penggembala sapi dan serigala.jpg"  alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Timun Mas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/Timun mas.jpg" alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">Belalang dan Semut</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/belalang dan semut.jpg"  alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal4Label">Berani karena Jujur</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/berani karena jujur.jpg"  alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal5Label">Sangkuriang</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/cerita-rakyat-sangkuriang.jpg"  alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal6Label">Bangau dan Burung Merak Sombong</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail rounded rounded-40 card-img-top" src="Attach/dongeng-pendek-bangau-dan-burung-merak.jpg"  alt="Gambar">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Mulai Membaca</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- Feedback -->
+    <section id="feedback">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h4>Kritik/Saran</h4>
+          </div>
+       </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Feedback -->
+    <br/>
+    <br/>
+    
+    <!-- Footer -->
+    <footer class="text-white fw-bold text-end" style="background-color: #12a894;">
+      <p><i class="bi bi-book-half"></i> ~ Kumpulan Cerita Anak Nusantara ~  </p>
+    </footer>
+    <!-- Akhir Foother -->
+
+
+  </div>
+</body>
+</html>
